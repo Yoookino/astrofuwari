@@ -24,9 +24,8 @@ lang: 'zh_CN'
 
 >今天也要元气满满地学习面向 Ctrl C+V 的编程
 
-
-
-<img align=left src="../../assets/images/YuruCampp.png" style="width:280px;" /> 
+<img align=left src="/images/fengjianbaihua.png" style="width:280px;" /> 
+<br>
 
 ---
 
@@ -37,7 +36,6 @@ lang: 'zh_CN'
 - &ensp;**社交账号：**
 
 喜欢看摇曳露营，纯纯的百合豚，铁打的百合战士(
->ゆるキャン△-各務原なでしこ
 
 ---
 
