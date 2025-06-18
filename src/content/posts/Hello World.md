@@ -24,7 +24,7 @@ lang: 'zh_CN'
 
 >今天也要元气满满地学习面向 Ctrl C+V 的编程
 
-<img align=left src="/images/fengjianbaihua.png" style="width:280px;" /> 
+<img align=left src="/images/YuruCamp.png" style="width:280px;" /> 
 <br>
 
 ---
