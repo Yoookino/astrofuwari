@@ -1,7 +1,7 @@
 import type {
 	ExpressiveCodeConfig,
 	LicenseConfig,
-	NavBarConfig,
+	//NavBarConfig,
 	ProfileConfig,
 	SiteConfig,
 } from "./types/config";
@@ -39,18 +39,18 @@ export const siteConfig: SiteConfig = {
 	],
 };
 
-export const navBarConfig: NavBarConfig = {
-	links: [
-		LinkPreset.Home,
-		LinkPreset.Archive,
-		LinkPreset.About,
-		{
-			name: "GitHub",
-			url: "https://github.com/Yoookino", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-	],
-};
+// export const navBarConfig: NavBarConfig = {
+// 	links: [
+// 		LinkPreset.Home,
+// 		LinkPreset.Archive,
+// 		LinkPreset.About,
+// 		{
+// 			name: "GitHub",
+// 			url: "https://github.com/Yoookino", // Internal links should not include the base path, as it is automatically added
+// 			external: true, // Show an external link icon and will open in a new tab
+// 		},
+// 	],
+// };
 
 export const profileConfig: ProfileConfig = {
 	avatar: "https://2.gravatar.com/avatar/d74f87e6661682a29d806f72f1ce1187dacd2f780dcb8dbe0699b368b66d7614?size=768&d=initials", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
@@ -59,10 +59,11 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			icon: "fa6-brands:twitter", 
+			url: "https://twitter.com/yoookino",
+			// Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com/yoookino",
 		},
 		{
 			name: "GitHub",
@@ -74,6 +75,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:telegram",
 			url: "https://t.me/Yoookino",
 		},
+		{
+			name:"Bilibili",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/9333645",
+		}
 	],
 };
 
