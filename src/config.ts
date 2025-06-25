@@ -44,6 +44,7 @@ export const siteConfig: SiteConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		LinkPreset.Friends,
 		{
 			name: "云上皮蛋瘦肉粥",
 			url: "https://pan.yokino.xyz", // Internal links should not include the base path, as it is automatically added

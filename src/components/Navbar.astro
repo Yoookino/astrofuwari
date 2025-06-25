@@ -10,14 +10,33 @@ import DisplaySettings from "./widget/DisplaySettings.svelte";
 import NavMenuPanel from "./widget/NavMenuPanel.astro";
 const className = Astro.props.class;
 
-let links: NavBarLink[] = navBarConfig.links.map(
-	(item: NavBarLink | LinkPreset): NavBarLink => {
-		if (typeof item === "number") {
-			return LinkPresets[item];
-		}
-		return item;
-	},
-);
+// let links: NavBarLink[] = navBarConfig.links.map(
+// 	(item: NavBarLink | LinkPreset): NavBarLink => {
+// 		if (typeof item === "number") {
+// 			return LinkPresets[item];
+// 		}
+// 		return item;
+// 	},
+// );
+let links: NavBarLink[] = navBarConfig.links
+  .map((item: NavBarLink | LinkPreset): NavBarLink | undefined => {
+    if (typeof item === "number") {
+      const resolved = LinkPresets[item];
+      if (!resolved) {
+        console.warn(`Warning: Invalid 'LinkPreset' number: ${item}`);
+        return undefined;
+      }
+      return resolved;
+    }
+
+    if (!item.name || !item.url) {
+      console.warn(`Warning: The navigation item is missing the 'name' or 'url' field: ${JSON.stringify(item)}`);
+      return undefined;
+    }
+
+    return item;
+  })
+  .filter((item): item is NavBarLink => !!item); // filter undefined
 ---
 <div id="navbar" class="z-50 onload-animation">
     <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <!-- used for onload animation -->
