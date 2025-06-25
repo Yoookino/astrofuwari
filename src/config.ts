@@ -1,7 +1,7 @@
 import type {
 	ExpressiveCodeConfig,
 	LicenseConfig,
-	//NavBarConfig,
+	NavBarConfig,
 	ProfileConfig,
 	SiteConfig,
 } from "./types/config";
@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/web-background.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/WP-background.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -39,18 +39,18 @@ export const siteConfig: SiteConfig = {
 	],
 };
 
-// export const navBarConfig: NavBarConfig = {
-// 	links: [
-// 		LinkPreset.Home,
-// 		LinkPreset.Archive,
-// 		LinkPreset.About,
-// 		{
-// 			name: "GitHub",
-// 			url: "https://github.com/Yoookino", // Internal links should not include the base path, as it is automatically added
-// 			external: true, // Show an external link icon and will open in a new tab
-// 		},
-// 	],
-// };
+ export const navBarConfig: NavBarConfig = {
+ 	links: [
+		LinkPreset.Home,
+		LinkPreset.Archive,
+		LinkPreset.About,
+		{
+			name: "云上皮蛋瘦肉粥",
+			url: "https://pan.yokino.xyz", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
+	],
+};
 
 export const profileConfig: ProfileConfig = {
 	avatar: "https://2.gravatar.com/avatar/d74f87e6661682a29d806f72f1ce1187dacd2f780dcb8dbe0699b368b66d7614?size=768&d=initials", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
@@ -94,4 +94,5 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
 };
+
 
