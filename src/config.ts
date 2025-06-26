@@ -45,11 +45,11 @@ export const siteConfig: SiteConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		LinkPreset.Friends,
-		{
-			name: "云上皮蛋瘦肉粥",
-			url: "https://pan.yokino.xyz", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
+		// {
+		// 	name: "云上皮蛋瘦肉粥",
+		// 	url: "https://pan.yokino.xyz", // Internal links should not include the base path, as it is automatically added
+		// 	external: true, // Show an external link icon and will open in a new tab
+		// },
 	],
 };
 
