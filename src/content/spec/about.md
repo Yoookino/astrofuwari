@@ -9,7 +9,7 @@
 
 >今天也要元气满满地学习面向 Ctrl C+V 的编程
 
-<img align=left src="/images/YuruCamp.png" style="width:280px;" /> 
+<img align=left src="/images/YuruCampp.png" style="width:280px;" /> 
 <br>
 
 ---
@@ -34,4 +34,5 @@
 
 ![Visitors](https://count.getloli.com/get/@:Yoookino)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6fPm_DNDvHI?si=vWX0P8KtBtZzTCKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+>喜欢的音乐：
+><iframe width="560" height="315" src="https://www.youtube.com/embed/6fPm_DNDvHI?si=vWX0P8KtBtZzTCKf" title="YouTube video player" frameborder="0" ?allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
