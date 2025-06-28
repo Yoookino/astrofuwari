@@ -14,8 +14,16 @@ const currentYear = new Date().getFullYear();
         &copy; <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved. /
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('rss.xml')}>RSS</a> /
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a><br>
-        <a class="transition link text-[var(--primary)] font-medium" + target="_blank" href="https://beian.miit.gov.cn/"> 
-        闽ICP备2025103139号-1</a><br>
+        <div class="flex items-center flex-wrap text-sm text-[var(--primary)]">
+            <a class="transition link font-medium" target="_blank" href="https://beian.miit.gov.cn/">
+              闽ICP备2025103139号-1
+            </a>
+            <span class="text-neutral-500"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+            <a class="transition link font-medium flex items-center space-x-1" target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=35078302000177">
+              <img src="/images/gongan.png" alt="公安图标" class="w-4 h-4"/>
+              <span>闽公网安备35078302000177号</span>
+            </a>
+        </div>
         Powered by
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
