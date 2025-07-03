@@ -2,6 +2,6 @@
   "name": "astrofuwari",
   "compatibility_date": "2025-07-03",
   "asstes": {
-    "directory": "./dist"
+    "directory": "/"
   }
 }
